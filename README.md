@@ -1,2 +1,2 @@
-﻿# CST499_Employee_Portal_Website 
-UAGC CST499 Final: General Capstone Week 3 Project
+﻿# CST499_Student_Registration_Portal_Website 
+UAGC CST499 Final: General Capstone Final Project
