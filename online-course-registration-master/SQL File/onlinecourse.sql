@@ -3,11 +3,10 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 11, 2022 at 02:35 AM
--- Server version: 10.3.15-MariaDB
--- PHP Version: 7.2.19
+-- Generation Time: Jul 18, 202 at 02:35 AM
+-- Server version: 10.3.15 PaxtonDB
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_UTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -41,7 +40,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `creationDate`, `updationDate`) VALUES
-(1, 'admin', 'f925916e2754e5e03f75dd58a5733251', '2022-01-31 16:21:18', '2022-01-31 16:21:18');
+(1, 'admin', 'f925916e2754e5e03f75dd58a5733251', '2024-07-18 16:21:18', '2024-07-18 16:21:18');
 
 -- --------------------------------------------------------
 
@@ -64,8 +63,8 @@ CREATE TABLE `course` (
 --
 
 INSERT INTO `course` (`id`, `courseCode`, `courseName`, `courseUnit`, `noofSeats`, `creationDate`, `updationDate`) VALUES
-(1, 'PHP01', 'PHP', '5', 10, '2022-02-10 17:23:28', NULL),
-(2, 'C001', 'C++', '12', 25, '2022-02-11 00:52:46', '11-02-2022 06:23:06 AM');
+(1, 'PHP01', 'PHP', '5', 10, '2024-07-18 16:21:18', NULL),
+(2, 'C001', 'C++', '12', 25, '2024-07-18 16:21:18', '2024-07-18 06:23:06 AM');
 
 -- --------------------------------------------------------
 
@@ -90,8 +89,8 @@ CREATE TABLE `courseenrolls` (
 --
 
 INSERT INTO `courseenrolls` (`id`, `studentRegno`, `pincode`, `session`, `department`, `level`, `semester`, `course`, `enrollDate`) VALUES
-(1, '10806121', '822894', 1, 1, 2, 3, 1, '2022-02-11 00:59:33'),
-(2, '10806121', '822894', 1, 1, 1, 2, 2, '2022-02-11 01:01:07');
+(1, '10806121', '822894', 1, 1, 2, 3, 1, '2024-07-18 00:59:33'),
+(2, '10806121', '822894', 1, 1, 1, 2, 2, '2024-07-18 01:01:07');
 
 -- --------------------------------------------------------
 
@@ -110,8 +109,8 @@ CREATE TABLE `department` (
 --
 
 INSERT INTO `department` (`id`, `department`, `creationDate`) VALUES
-(1, 'IT', '2022-02-10 17:23:04'),
-(2, 'HR', '2022-02-10 17:23:09');
+(1, 'IT', '2024-07-18 17:23:04'),
+(2, 'HR', '2024-07-18 17:23:09');
 
 -- --------------------------------------------------------
 
@@ -130,9 +129,9 @@ CREATE TABLE `level` (
 --
 
 INSERT INTO `level` (`id`, `level`, `creationDate`) VALUES
-(1, '1', '2022-02-11 00:59:02'),
-(2, '2', '2022-02-11 00:59:02'),
-(3, '3', '2022-02-11 00:59:09');
+(1, '1', '2024-07-18 00:59:02'),
+(2, '2', '2024-07-18 00:59:02'),
+(3, '3', '2024-07-18 00:59:09');
 
 -- --------------------------------------------------------
 
@@ -153,7 +152,7 @@ CREATE TABLE `news` (
 
 INSERT INTO `news` (`id`, `newstitle`, `newsDescription`, `postingDate`) VALUES
 (2, 'Test News', 'This is for testing. This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.', '2022-02-10 17:36:50'),
-(3, 'New Course Started C#', 'This is sample text for testing.', '2022-02-11 00:54:38');
+(3, 'New Course Started C#', 'This is sample text for testing.', '2024-07-18 00:54:38');
 
 -- --------------------------------------------------------
 
@@ -173,9 +172,9 @@ CREATE TABLE `semester` (
 --
 
 INSERT INTO `semester` (`id`, `semester`, `creationDate`, `updationDate`) VALUES
-(1, '1', '2022-02-10 17:22:49', NULL),
-(2, '2', '2022-02-10 17:22:55', NULL),
-(3, '3', '2022-02-11 00:51:43', NULL);
+(1, '1', '2024-07-18 17:22:49', NULL),
+(2, '2', '2024-07-18 17:22:55', NULL),
+(3, '3', '2024-07-18 00:51:43', NULL);
 
 -- --------------------------------------------------------
 
@@ -194,7 +193,7 @@ CREATE TABLE `session` (
 --
 
 INSERT INTO `session` (`id`, `session`, `creationDate`) VALUES
-(1, '2022', '2022-02-10 17:10:59');
+(1, '2024', '2024-07-18 17:10:59');
 
 -- --------------------------------------------------------
 
@@ -221,7 +220,7 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`StudentRegno`, `studentPhoto`, `password`, `studentName`, `pincode`, `session`, `department`, `semester`, `cgpa`, `creationdate`, `updationDate`) VALUES
-('10806121', '', 'f925916e2754e5e03f75dd58a5733251', 'Anuj kumar', '822894', NULL, NULL, NULL, '7.10', '2022-02-11 00:53:31', NULL);
+('10806121', '', 'f925916e2754e5e03f75dd58a5733251', 'Brandon Stokes', '822894', NULL, NULL, NULL, '7.10', '2022-02-11 00:53:31', NULL);
 
 -- --------------------------------------------------------
 
@@ -243,9 +242,9 @@ CREATE TABLE `userlog` (
 --
 
 INSERT INTO `userlog` (`id`, `studentRegno`, `userip`, `loginTime`, `logout`, `status`) VALUES
-(1, '10806121', 0x3a3a3100000000000000000000000000, '2022-02-11 00:55:07', NULL, 1),
-(2, '10806121', 0x3a3a3100000000000000000000000000, '2022-02-11 00:57:00', NULL, 1),
-(3, '10806121', 0x3a3a3100000000000000000000000000, '2022-02-11 00:57:22', '11-02-2022 06:31:26 AM', 1);
+(1, '10806121', 0x3a3a3100000000000000000000000000, '2024-07-18 00:55:07', NULL, 1),
+(2, '10806121', 0x3a3a3100000000000000000000000000, '2024-07-18 00:57:00', NULL, 1),
+(3, '10806121', 0x3a3a3100000000000000000000000000, '2024-07-18 00:57:22', '2024-07-18 06:31:26 AM', 1);
 
 --
 -- Indexes for dumped tables
